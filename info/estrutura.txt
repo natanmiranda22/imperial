@@ -1,0 +1,6 @@
+- home (página inicial - banner destaque)
+- auto peças (categorias de produtos)
+- promoções (produtos em oferta)
+- quem somos (texto institucional e localização)
+- newsletter (cadastro de e-mails)
+- fale conosco (formulário contato)
