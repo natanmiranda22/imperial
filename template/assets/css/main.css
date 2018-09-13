@@ -783,7 +783,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 3. Hero Area
 ========================================================================== */
 #hero-area {
-  background: url(../img/hero-area.jpg) no-repeat;
+  /*background: url(../img/hero-area.jpg) no-repeat;*/
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -1077,7 +1077,7 @@ a.back-to-top:hover, a.back-to-top:focus {
    Featured Listings Styles
    ========================================================================== */
 .featured-lis {
-  background: #fafafa;
+  background: #eee;
 }
 
 .product-item {
@@ -3950,4 +3950,76 @@ footer .menu li a:hover {
 .search-bar .btn-common {
   padding: 0 15px;
   width: auto;
+}
+.contact-form .form-control {
+  height: 52px;
+  margin-bottom: 15px;
+}
+.contact-form textarea {
+  min-height: 120px;
+}
+
+/* youtube background video */
+.background-video {
+  background-position: top center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+video,
+source {
+  bottom: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+}
+
+.loaded .ytplayer-container {
+  display: block;
+}
+
+.loaded .placeholder-image {
+  opacity: 0;
+}
+
+.ytplayer-container {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  min-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.placeholder-image {
+  height: 100%;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.ytplayer-shield {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.ytplayer-player {
+  position: absolute;
 }
