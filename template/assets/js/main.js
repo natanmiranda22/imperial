@@ -13,15 +13,25 @@
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 100) {
             $('.scrolling-navbar').addClass('top-nav-collapse');
+            $('.blue').show();
+            $('.yellow').hide();
         } else {
             $('.scrolling-navbar').removeClass('top-nav-collapse');
+             $('.blue').hide();
+             $('.yellow').show();
         }
     });
+
+    // one page navigation 
+    $('.navbar-nav').onePageNav({
+            currentClass: 'active'
+    }); 
 
   /* slicknav mobile menu active 
     ========================================================*/
     $('.mobile-menu').slicknav({
         prependTo: '.navbar-header',
+        closeOnClick:true,
         parentTag: 'liner',
         allowParentLinks: true,
         duplicate: true,
@@ -29,6 +39,10 @@
         closedSymbol: '<i class="lni-chevron-right"></i>',
         openedSymbol: '<i class="lni-chevron-down"></i>',
       });
+
+     
+
+
 
   /* WOW Scroll Spy
     ========================================================*/
